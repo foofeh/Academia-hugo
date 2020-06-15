@@ -1,6 +1,6 @@
 [build]
-publish = "examplesite/public" 
-command = "hugo --gc --minify"
+publish = "exampleSite/public" 
+command = "cd exampleSite && hugo --gc --themesDir ../.. --config config-prod.toml"
 
 [context.production.environment]
 HUGO_VERSION = "0.62.1"
